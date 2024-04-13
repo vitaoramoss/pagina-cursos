@@ -1,0 +1,12 @@
+:root {
+    --cor-primaria: #453F78;
+    --cor-secundaria: rgb(55, 140, 231);
+    --cor-terciaria: rgb(103, 198, 227);
+    --cor-quaternaria: rgb(223, 245, 255);
+}
+ 
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
