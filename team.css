@@ -1,0 +1,134 @@
+@import url(/colors.css);
+
+body {
+    height: auto;
+    background-color: var(--cor-primaria);
+    position: relative;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    align-items: center;
+    padding: 6px;
+}
+
+.logotipo {
+    height: 70px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+nav * {
+    color: var(--cor-quaternaria);
+    font-weight: bold;
+}
+
+nav *:hover {
+    color: var(--cor-terciaria);
+    transform: scale(1.1);
+}
+
+nav a:nth-child(2) {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    color: var(--cor-quaternaria);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.professores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.professores__interno {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.professores__cartao {
+    border: solid 2px var(--cor-terciaria);
+    width: 30rem;
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+    background-color: var(--cor-quaternaria);
+    border-radius: 10px;
+}
+
+.professores__cartao:hover {
+    transform: scale(1.01);
+    box-shadow: 7px 7px #444444;
+}
+
+.professores__cartao__foto {
+    width: 100%;
+    height: 80%;
+}
+
+.professores__cartao__rodape {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.professores__cartao__rodape__nome {
+    color: var(--cor-primaria);
+    font-size: 2rem;
+}
+
+.professores__cartao__rodape__tecnologia {
+    color: var(--cor-secundaria);
+}
+
+footer {
+    margin-top: 6rem;
+    padding: 4rem;
+    background: rgb(38, 80, 115);
+    background: linear-gradient(180deg, #453F78 0%, rgb(103, 198, 227) 89%);
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    color: white;
+}
+
+.footer__escola {
+    font-weight: bold;
+}
+
+.footer__links {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__links h2 {
+    margin-bottom: 2rem;
+}
+
+.footer__links a {
+    color: white;
+    margin: 5px;
+    font-size: 1.2rem;
+}
+
+.footer__links a:hover {
+    filter: brightness(80%);
+}
